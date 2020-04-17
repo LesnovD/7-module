@@ -1,0 +1,60 @@
+body{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262; 
+    line-height: 24px;  
+}
+.site-navigation{
+  list-style: none;
+  
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-navigation li {
+  display: inline;
+}
+a:active{
+  color: #03a9f4;
+}
+ a.lifestyle{
+  margin: 77px 0 0 313px;
+}
+a.photodiary{
+  margin: 77px 0 0 120px;
+}
+a.music{
+  margin: 77px 0 0 103px;
+}
+a.travel{
+  margin: 77px 0 0 95px;
+}
+
+p {
+  width: 420px;
+}
+.one,.three,.five  {
+  margin: 100px 0 0 150px;
+  display: inline-block;
+}
+
+.two,.four,.six {
+  display: inline-block;
+  margin: 100px 0 0 60px;
+}
+h3 {
+  font-family: Ubuntu;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-weight: 300;
+}
+button{
+  display: block;
+  width: 164px;
+  height: 60px;
+  font-size: 20px;
+  margin: 54px 0 70px 507px;
+}
