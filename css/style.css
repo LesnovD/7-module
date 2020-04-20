@@ -1,4 +1,6 @@
 body{
+  margin: 0px auto;
+    padding: 76px 0 0 0;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     color: #626262; 
@@ -21,7 +23,7 @@ a:active{
   color: #03a9f4;
 }
  a.lifestyle{
-  margin: 77px 0 0 313px;
+  margin: 77px 0 0 380px;
 }
 a.photodiary{
   margin: 77px 0 0 120px;
@@ -37,13 +39,16 @@ p {
   width: 420px;
 }
 .one,.three,.five  {
-  margin: 100px 0 0 150px;
+  margin: 100px 0 0 220px;
   display: inline-block;
 }
 
 .two,.four,.six {
   display: inline-block;
   margin: 100px 0 0 60px;
+}
+h2{
+  font-size: 30px;
 }
 h3 {
   font-family: Ubuntu;
@@ -56,5 +61,6 @@ button{
   width: 164px;
   height: 60px;
   font-size: 20px;
-  margin: 54px 0 70px 507px;
+  margin: 54px 0 70px 576px;
 }
+
