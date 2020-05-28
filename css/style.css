@@ -132,6 +132,9 @@ margin-right: 40px;
     justify-content: space-between;
 
  }
+ .services-list_item:not(:last-child){
+    margin-right: 58px;
+ }
  .services-list_item-titel{
       font-size: 18px;
       font-family: "Montserrat";
@@ -142,11 +145,13 @@ margin-right: 40px;
  }
  .services-list_item-text{
       font-size: 14px;
-      font-family: "Alegreya-Italic";
+      font-family: "Roboto Slab";
       color: rgb(119, 119, 119);
       line-height: 1.2;
       text-align: center;
  }
+
+ 
  .services-list_item-titel:before{
     content: "";
    display: block;
@@ -175,6 +180,8 @@ margin-right: 40px;
  .contact{
    background-color:#222222;
    background-image: url("../img/image2.png");
+   background-repeat: no-repeat;
+   background-position: right;
    padding-top: 100px;
    padding-bottom: 110px;
 
@@ -182,10 +189,12 @@ margin-right: 40px;
 .contact-titel{
       color: rgb(255, 255, 255);
 }
-.contact-form{
+
+.form-wrapper{
    display: flex;
    justify-content: space-between;
    margin-bottom: 30px;
+   
 }
 .contact-form-input_wrapper{
    display: flex;
@@ -194,7 +203,6 @@ margin-right: 40px;
 }
 .contact-form-input , .contact-form-message{
    flex-basis: 460px;
-   
    border-style: solid;
    border-width: 1px;
    border-color: rgb(204, 204, 204);
@@ -203,11 +211,11 @@ margin-right: 40px;
    padding-left: 20px;
    font-size: 14px;
    font-family: "Montserrat";
-   color: rgb(187, 187, 187);
    line-height: 1.2;
    text-align: left;
 }
-.contact-form-input ,.contact-form-message::placeholder{
+.contact-form-input::placeholder,.contact-form-message::placeholder{
+   color: rgb(187, 187, 187);
    text-transform: uppercase;
    font-weight: bold;
 }
@@ -217,16 +225,28 @@ margin-right: 40px;
 .contact-form-input{
    height: 54px;
 }
+.contact-form-input:focus{
+   outline: none;
+}
+.contact-form-input:required:focus:valid,.contact-form-message:required:focus:valid{
+   border: 1px solid green;
+}
+.contact-form-input:required:focus:invalid,.contact-form-message:required:focus:invalid{
+   border: 1px solid red;
+}
+
  .contact-form-message{
    height: 218px;
    padding-top: 20px;
    resize: none;
  }
-.button-wrapper{
-   width: fit-content;
-   margin: 0 auto;
-}
+ .contact-form-message:focus{
+    outline: none;
+ }
+
 .send-btn{
+   display: block;
+   margin: 0 auto;
    text-align: center;
    font-size: 18px;
    font-family: "Montserrat";
